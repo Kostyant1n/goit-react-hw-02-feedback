@@ -1,0 +1,72 @@
+.btn {
+  margin: 21px;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: hidden;
+  background-color: transparent;
+}
+.good {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: rgb(242, 245, 47);
+  background-color: green;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  &:active {
+    background-color: blue;
+  }
+}
+
+.neutral {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: rgb(242, 245, 47);
+  background-color: green;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  &:active {
+    background-color: blue;
+  }
+}
+
+.bad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: rgb(242, 245, 47);
+  background-color: green;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  &:active {
+    background-color: blue;
+  }
+}
+
+.new {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: rgb(242, 245, 47);
+  background-color: green;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  &:active {
+    background-color: blue;
+  }
+}
