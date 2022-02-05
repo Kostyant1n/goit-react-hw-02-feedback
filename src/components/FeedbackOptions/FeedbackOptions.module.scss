@@ -1,5 +1,18 @@
 .btn {
   margin: 18px;
+  // position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: hidden;
+  color: rgb(242, 245, 47);
+  background-color: green;
+  &:active {
+    background-color: blue;
+  }
+}
+
+.btnRef {
   position: relative;
   width: 50px;
   height: 50px;
@@ -7,61 +20,13 @@
   border: hidden;
   background-color: transparent;
 }
-.good {
-  position: absolute;
-  top: 0;
-  left: 0;
-  fill: rgb(242, 245, 47);
-  background-color: green;
-
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  &:active {
-    background-color: blue;
-  }
-}
-
-.neutral {
-  position: absolute;
-  top: 0;
-  left: 0;
-  fill: rgb(242, 245, 47);
-  background-color: green;
-
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  &:active {
-    background-color: blue;
-  }
-}
-
-.bad {
-  position: absolute;
-  top: 0;
-  left: 0;
-  fill: rgb(242, 245, 47);
-  background-color: green;
-
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  &:active {
-    background-color: blue;
-  }
-}
 
 .new {
-  position: absolute;
-  top: 0;
-  left: 0;
   fill: rgb(242, 245, 47);
   background-color: green;
-
+  position: absolute;
+  top: -5px;
+  left: 18px;
   width: 50px;
   height: 50px;
   border-radius: 50%;

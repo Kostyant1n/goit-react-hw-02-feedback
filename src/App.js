@@ -12,21 +12,9 @@ class App extends Component {
     bad: 0,
   };
 
-  good = () => {
-    this.setState((prevState) => ({
-      good: prevState.good + 1,
-    }));
-  };
-
-  neutral = () => {
-    this.setState((prevState) => ({
-      neutral: prevState.neutral + 1,
-    }));
-  };
-
-  bad = () => {
-    this.setState((prevState) => ({
-      bad: prevState.bad + 1,
+  onLeaveFeedback = (option) => {
+    this.setState((state) => ({
+      [option]: state[option] + 1,
     }));
   };
 
@@ -49,10 +37,8 @@ class App extends Component {
       <div className={styles.feedback}>
         <Section title="Please leave feedback">
           <FeedbackOptions
-            options={this.state}
-            onLeaveFeedbackGood={this.good}
-            onLeaveFeedbackNeutral={this.neutral}
-            onLeaveFeedbackBad={this.bad}
+            options={Object.keys(this.state)}
+            onLeaveFeedback={this.onLeaveFeedback}
             onLeaveFeedbackNew={this.new}
           />
 
